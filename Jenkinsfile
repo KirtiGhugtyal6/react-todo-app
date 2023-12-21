@@ -4,8 +4,7 @@ pipeline {
     environment {
         AWS_ACCESS_KEY_ID = credentials('your-aws-access-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('your-aws-secret-access-key')
-        S3_BUCKET_NAME = 'your-s3-bucket-name'
-        NODE_VERSION = '14'  // Use the desired Node.js version
+        S3_BUCKET_NAME = 'react-to-do-app'
     }
 
     stages {
