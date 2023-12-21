@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     sh 'cd /opt/checkout/react-todo-app/'
-                    sh 'sudo npm stop'  
+                    sh 'npm stop'  
                 }
             }
         }
