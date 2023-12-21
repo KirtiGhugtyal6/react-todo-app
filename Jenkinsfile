@@ -14,14 +14,14 @@ pipeline {
             }
         }
 
-        stage('Stop Existing Server') {
-            steps {
-                script {
-                    sh 'cd /opt/checkout/react-todo-app/'
-                    sh 'npm stop'  
-                }
-            }
-        }
+        // stage('Stop Existing Server') {
+        //     steps {
+        //         script {
+        //             sh 'cd /opt/checkout/react-todo-app/'
+        //             sh 'npm stop'  
+        //         }
+        //     }
+        // }
 
         stage('Pull Fresh Code') {
             steps {
