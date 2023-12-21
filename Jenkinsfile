@@ -26,6 +26,7 @@ pipeline {
         stage('Pull Fresh Code') {
             steps {
                 script {
+                    sh 'cd /opt/checkout/react-todo-app/'
                     git pull origin master  // Use your Git repository and branch
                 }
             }
